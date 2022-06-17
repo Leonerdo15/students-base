@@ -1,0 +1,60 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: grid;
+  grid-template-areas: "h h h" "nav main aside" "f f f";
+  grid-template-columns: 20% auto 20%;
+}
+
+
+body > header, body > footer {
+  color: white;
+  background-color: blueviolet;
+}
+
+body > header {
+  grid-area: h;
+  padding:10px;
+  text-align: center;
+}
+
+
+nav {
+  grid-area: nav;
+  color: white;
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin: 10px 5px 10px 0px; 
+}
+
+nav a {
+  color: white;
+}
+
+aside {
+  grid-area: aside;
+  padding: 5px;
+  margin: 10px 0px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid blueviolet;
+}
+
+main {
+  grid-area: main;
+  color:#333333;
+}
+
+footer {
+  grid-area: f;
+  padding: 5px;
+  padding-left: 10%;
+  min-height: 50px;
+}
+
+
+
+
+
